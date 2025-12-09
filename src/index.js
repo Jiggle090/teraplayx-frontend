@@ -8,7 +8,10 @@ function App() {
       <h1 className="title">TeraPlayX</h1>
 
       <div className="card">
-        <input placeholder="Paste TeraBox link here" className="input" />
+        <input
+          placeholder="Paste TeraBox link here"
+          className="input"
+        />
 
         <button
           className="btn"
@@ -27,6 +30,7 @@ function App() {
                   alert("Invalid or unsupported link!");
                   return;
                 }
+
                 window.location.href = data.download; // start download
               })
               .catch(() => alert("API error, try again later!"));
