@@ -49,4 +49,5 @@ body {
   background: var(--accent);
   color: white;
   font-size: 16px;
+  cursor: pointer;
 }
