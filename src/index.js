@@ -31,9 +31,11 @@ function App() {
                   return;
                 }
 
-                window.location.href = data.download; // start download
+                window.location.href = data.download;
               })
-              .catch(() => alert("API error, try again later!"));
+              .catch(() => {
+                alert("API error, try again later!");
+              });
           }}
         >
           Download
