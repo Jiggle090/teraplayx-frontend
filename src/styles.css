@@ -1,22 +1,52 @@
-/* Minimal styles to reproduce dark themed card look */
-:root{
-  --bg:#081026;
-  --card:#0f1724;
-  --muted:#9aa6b2;
-  --accent:#7c3aed;
+:root {
+  --bg: #0b0f19;
+  --card: #111827;
+  --text: #ffffff;
+  --accent: #7c3aed;
 }
-body{ margin:0; font-family:Inter,Arial, sans-serif; background:var(--bg); color:#e6eef8; display:flex; align-items:center; justify-content:center; min-height:100vh;}
-.container{ width:100%; max-width:760px; padding:24px;}
-.card{ background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:20px; padding:20px; box-shadow: 0 8px 30px rgba(2,6,23,0.6); border:1px solid rgba(255,255,255,0.03);}
-.thumb{ width:100%; border-radius:12px; height:240px; object-fit:cover;}
-.meta{ margin-top:16px;}
-.title{ font-size:22px; font-weight:700; color:#eaf2ff;}
-.row{ display:flex; gap:12px; margin-top:12px; align-items:center; flex-wrap:wrap;}
-.badge{ background:rgba(255,255,255,0.03); padding:8px 12px; border-radius:10px; color:var(--muted); font-size:14px;}
-.buttons{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:18px;}
-.btn{ padding:12px 14px; border-radius:12px; font-weight:600; cursor:pointer; border:none;}
-.play{ background: linear-gradient(90deg,#10b981,#059669); color:white;}
-.fastplay{ background: linear-gradient(90deg,#f59e0b,#f97316); color:white;}
-.download{ background: linear-gradient(90deg,#7c3aed,#6d28d9); color:white;}
-.fastdownload{ background: linear-gradient(90deg,#ec4899,#f43f5e); color:white;}
-.info{ font-size:13px; color:var(--muted); margin-top:10px;}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  font-family: Arial, sans-serif;
+  color: var(--text);
+}
+
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  font-size: 16px;
+}
